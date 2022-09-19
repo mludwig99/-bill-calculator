@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/img-2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.wrapper {
+    width: 600px;
+    background-color: rgb(248, 244, 238);
+    box-shadow: 0 0 10px #000;
+    padding: 20px;
+
+}
+
+
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.top p {
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+.top h1{
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, rgb(130, 23, 23), transparent, transparent);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 28px;
+        font-family: "Source Sans Pro", sans-serif;
+        animation: reveal 3000ms ease-in-out forwards 200ms,
+            glow 2500ms linear 3 2000ms;
+}
+ @keyframes reveal {
+     80% {
+         letter-spacing: 8px;
+     }
+
+     100% {
+         background-size: 300% 300%;
+     }
+ }
+ @keyframes glow {
+     40% {
+         text-shadow: 0 0 8px #fff;
+     }
+ }
+p{
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+label {
+    text-align: center;
+    padding: 8px;
+}
+
+input {
+    margin: auto;
+    width: 50%;
+    padding: 4px;
+    text-align: center;
+}
+
+select {
+    margin: auto;
+    width: 50%;
+    padding: 4px;
+    text-align: center;
+}
+
+button {
+    margin: auto;
+    width: 20%;
+    padding: 4px;
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px;
+    font-weight: bold;
+    background-color: rgb(183, 219, 185);
+    
+}
+button:hover{
+    background-color: rgb(175, 210, 175);
+}
+i{
+    font-size: 0.8rem;
+}
+.cost-info{
+    margin-top: 16px;
+}
