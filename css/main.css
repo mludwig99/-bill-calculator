@@ -36,31 +36,35 @@ h1 {
     padding: 12px;
     margin-bottom: 16px;
 }
-.top h1{
-    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, rgb(130, 23, 23), transparent, transparent);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-size: 28px;
-        font-family: "Source Sans Pro", sans-serif;
-        animation: reveal 3000ms ease-in-out forwards 200ms,
-            glow 2500ms linear 3 2000ms;
-}
- @keyframes reveal {
-     80% {
-         letter-spacing: 8px;
-     }
 
-     100% {
-         background-size: 300% 300%;
-     }
- }
- @keyframes glow {
-     40% {
-         text-shadow: 0 0 8px #fff;
-     }
- }
-p{
+.top h1 {
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, rgb(130, 23, 23), transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+        glow 2500ms linear 3 2000ms;
+}
+
+@keyframes reveal {
+    80% {
+        letter-spacing: 8px;
+    }
+
+    100% {
+        background-size: 300% 300%;
+    }
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: 0 0 8px #fff;
+    }
+}
+
+p {
     text-align: center;
 }
 
@@ -99,14 +103,23 @@ button {
     border: solid 1px;
     font-weight: bold;
     background-color: rgb(183, 219, 185);
-    
+
 }
-button:hover{
+
+button:hover {
     background-color: rgb(175, 210, 175);
 }
-i{
+
+i {
     font-size: 0.8rem;
 }
-.cost-info{
+
+.cost-info {
+    display: none;
     margin-top: 16px;
+}
+
+.error {
+    margin-top: 12px;
+    color: rgb(227, 70, 70);
 }
